@@ -34,13 +34,34 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    -Adaptive layouts lack in accommodating for thousands of devices because care was only given to      specific designs at certain break points. 
+   
+    -While Responsive layouts combine features of adaptive and combine into one seamless experience.
+     Media queries are used to constrain responsive units so that as the viewport expands or shrinks, 
+     you get an experience that looks and functions beautifully across thousands of devices and screen sizes.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    -Mobile first implies you will design and code for a mobile device first and expand layout or       features as you gain more screen space toward desktop. (min-width)
+    
+    -While desktop first is just the result of designing a page to be responsive. (max-width)
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    -Rem is equal to the computed value of font-size on the root element. 
+     This means that 1rem equals the font size of the html element (which for most browsers has a default value of 16px).
+     By setting the html root element to 62.5% makes the math a lot easier when trying to find the font size that we want. That means 1rem would equate to 10px throughout the document.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    -A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
+ 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    -My favorite concept would have to be the ability to use mixins and nesting. For me, its a lot  easier to select elements in css by using nesting selectors. The concept that gave me the most trouble is knowing when to use a mixin vs a parametric mixin.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
