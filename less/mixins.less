@@ -1,1 +1,23 @@
 // Mixins Here
+.flex(@flex-direction: row, @justify, @align){
+    display: flex;
+    flex-direction: @flex-direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.test(){
+    border: 1px solid red;
+}
+
+.buttonShaper(@width, @height, @font-size, @bk-color, @border-radius, @justify, @align, @color ){
+    display: flex;
+    width: @width;
+    height: @height;
+    font-size: @font-size;
+    background-color: @bk-color;
+    border-radius: @border-radius;
+    justify-content: @justify;
+    align-items: @align;
+    color: @color;
+}

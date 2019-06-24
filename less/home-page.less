@@ -1,8 +1,15 @@
 // Home Content
 
 .home {
-
   .intro {
+    .headerImg{
+      img{
+        border-radius: 10px;
+        @media(max-width: 500px){
+          width: 100%;
+        }
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -18,12 +25,25 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media(max-width: 500px){
+      flex-direction: column;
+      .sky{
+        display:none;
+      }
+      .launch{
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media(max-width: 500px){
+        width: 90%;
+        margin:20px;
+      }
     }
   }
 
@@ -45,9 +65,19 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media(max-width: 500px){
+      flex-direction: column-reverse;
+      margin: 10px;
+      padding: 0;
+
+    }
 
     .walk-text {
       width: 50%;
+      @media(max-width: 500px){
+        width: 100%;
+        margin: 10px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +88,26 @@
       }
 
       .btn {
+        .buttonShaper(100px, 35px, 2rem, @btn-bg-color, 5px, center, center, @sea-shell);
+        &:hover{
+           color: @btn-bg-color;
+           background: @sea-shell;  
+        }
+        @media(max-width: 500px){
+          width: 100%;
+          height: 60px;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media(max-width: 500px){
+        width: 90%;
+        padding-top: 15px;
+       
+      }
       
       img {
         width: 100%;
