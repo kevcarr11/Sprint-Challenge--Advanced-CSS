@@ -251,6 +251,10 @@ footer {
   align-items: center;
   color: #F1F1F1;
 }
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background: #F1F1F1;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
